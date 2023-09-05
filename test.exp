@@ -1,0 +1,63 @@
+#!/usr/bin/expect -f
+
+spawn ./lab1
+expect "Enter your plan name: "
+send "gold\r"
+expect "Enter the number of months: "
+send "1\r"
+expect "Cost of the plan = \$90."
+expect eof
+
+spawn ./lab1
+expect "Enter your plan name: "
+send "silver\r"
+expect "Enter the number of months: "
+send "1\r"
+expect "Cost of the plan = \$90."
+expect eof
+
+spawn ./lab1
+expect "Enter your plan name: "
+send "silver\r"
+expect "Enter the number of months: "
+send "3\r"
+expect "Cost of the plan = \$60."
+expect eof
+
+spawn ./lab1
+expect "Enter your plan name: "
+send "gold\r"
+expect "Enter the number of months: "
+send "6\r"
+expect "Cost of the plan = \$70."
+expect eof
+
+spawn ./lab1
+expect "Enter your plan name: "
+send "silver\r"
+expect "Enter the number of months: "
+send "10\r"
+expect "Cost of the plan = \$60."
+expect eof
+
+spawn ./lab1
+expect "Enter your plan name: "
+send "gold\r"
+expect "Enter the number of months: "
+send "7\r"
+expect "Cost of the plan = \$35."
+expect eof
+
+spawn ./lab1
+expect "Enter your plan name: "
+send "asdf\r"
+expect "I'm sorry. \"asdf\" is not a known plan."
+expect "Enter your plan name: "
+send "bbbb\r"
+expect "I'm sorry. \"bbbb\" is not a known plan."
+expect "Enter your plan name: "
+send "gold\r"
+expect "Enter the number of months: "
+send "7\r"
+expect "Cost of the plan = \$35."
+expect eof

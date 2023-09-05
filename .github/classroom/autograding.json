@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "step 8 full test",
+      "setup": "sudo apt-get install expect; make",
+      "run": "expect test.exp",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 4,
+      "points": null
+    }
+  ]
+}
